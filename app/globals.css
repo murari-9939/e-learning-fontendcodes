@@ -1,7 +1,14 @@
-@import "tailwindcss";
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* slick carousel default styles */
+ 
+ @import "tailwindcss";
+
+ /* @slick carousel default styles  */
+ /* slick carousel default styles */
 @import "slick-carousel/slick/slick.css";
+ @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import "tw-animate-css";
 
@@ -10,22 +17,21 @@
 
 
 
-
 /* movale element fast */
 
-@keyframes scroll-horizontal {
+ @keyframes scroll-horizontal {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%); /* move half width */
   }
-}
+} 
 
-.animate-scroll {
+ .animate-scroll {
   animation: scroll-horizontal 20s linear infinite;
-}
-
+} 
+ 
 
 
 
@@ -180,4 +186,5 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
+} 
+ 
